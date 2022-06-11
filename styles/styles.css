@@ -10,7 +10,7 @@ body {
   --add-color: #2f303a;
   --accent-color: #2196f3;
   --add-font-color: #ffffff;
-  --main-font-color: 212121
+  --main-font-color: 212121;
   --text-font-color: #757575;
   --team-bgr-color: #f5f4fa;
   --logo-color: #000000;
@@ -43,6 +43,10 @@ p {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.item:first-child {
+  margin-left: 0px;
 }
 
 /* ----------------------HEADER---------------------- */
@@ -107,7 +111,8 @@ p {
   list-style: none;
 }
 
-.nav-item, .contacts-item {
+.nav-item,
+.contacts-item {
   margin: 0;
 }
 
@@ -231,7 +236,7 @@ p {
 }
 
 .team-list {
- display: flex;
+  display: flex;
 }
 
 .team-title {
@@ -242,14 +247,11 @@ p {
   margin-bottom: 10px;
 }
 
-.team-image {
-  margin-bottom: 30px;
-}
-
 .team-item {
   width: calc((100%-90px) / 4);
   background-color: var(--add-font-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -308,6 +310,8 @@ p {
   font-size: 16px;
   line-height: 1.62;
 
+  padding: 6px 22px;
+
   background-color: var(--team-bgr-color);
   cursor: pointer;
   border: none;
@@ -345,7 +349,7 @@ p {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  margin-bottom: 9px;
+  margin-bottom: 4px;
 }
 
 .projects-item .projects-text {
@@ -374,5 +378,3 @@ p {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-
